@@ -1,74 +1,103 @@
 # 🌿 Plant Care Tracker
 
-A beautifully themed, full-stack, mobile-responsive web application designed to help plant lovers easily monitor and manage the care of their indoor and outdoor plants. Built with love for green thumbs, this app tracks everything from watering to plant health — all in one place.
+## 🔎 Project Overview
+
+> A beautifully themed, full-stack, mobile-responsive web application designed to help plant lovers easily monitor and manage the care of their indoor and outdoor plants. Built with love for green thumbs, this app tracks everything from watering to plant health — all in one place.
 
 ---
 
-## 🚀 Features
+## 📸 Screenshot
 
-### 🌐 Navigation Bar
-- Real-time date and time displayed using **date-fns**.
-- Fully responsive, clean navigation across all devices.
-- Light/Dark **theme toggling** for an enhanced user experience.
+![Project Screenshot](public/Screenshot_1.png)
 
-### 🖼️ Banner with Slider
-- An attractive sliding banner showcasing plant care visuals and tips.
-- Built with performance and smooth transitions in mind.
+---
 
-### 🪴 Plant Cards
-- Each plant is displayed in a beautiful card format.
-- "View Details" button shows full plant info and care instructions.
-- Stylish and user-friendly interface.
+## 🛠 Technologies Used
 
-### 👤 User Authentication
-- Secure **Registration**, **Login**, and **Logout** functionality.
-- Authentication implemented with token/session management.
-- User receives styled feedback messages (success/error).
+- React.js (Frontend UI)
+- Node.js & Express (Backend API)
+- MongoDB (Database) – if applicable
+- Axios (HTTP client)
+- date-fns (Real-time date and time display)
+- Firebase Authentication / JWT (User authentication)
+- Tailwind CSS (Styling)
+- Context API (State management)
 
-### 🧑‍🌾 Personal User Dashboard
-- Each user gets a **unique dashboard** with:
-  - Their own plant list
+---
+
+## ✨ Core Features
+
+- Real-time date and time display in the navigation bar.
+- Fully responsive, clean navigation with light/dark theme toggling.
+- Attractive sliding banner showcasing plant care visuals and tips.
+- Plant cards with detailed view options for plant care instructions.
+- Secure user authentication (register, login, logout).
+- Personal user dashboard with:
+  - User's own plant list
   - Personal information section
-  - Editable and deletable saved data
-- Users can **add, update, delete** their plant records at any time.
-
-### 🧾 Plant Detail Page
-- Displays all key information about each plant.
-- Includes care logs and health status if available.
-
-### 🎨 Theming
-- Dynamic **theme support** (light/dark).
-- The theme reflects specific plant categories (e.g., succulents, bonsai).
-- Smooth transitions and eye-friendly color palette.
-
-### 📦 Footer with Modal
-- Clean footer design with a pop-up modal for extra options.
-- Contains useful links and contact/help section.
-- Designed with a good color contrast and consistent branding.
+  - Editable and deletable plant records
+- Detailed plant page showing care logs and health status.
+- Theming that changes based on plant categories (e.g., succulents, bonsai).
+- Clean footer with modal for contact/help and useful links.
 
 ---
 
-## 📱 Mobile Responsive Design
+## ⚙️ Dependencies
 
-- Optimized layout for **mobile**, **tablet**, and **desktop**.
-- Fluid breakpoints using modern CSS and responsive libraries.
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React.js, Tailwind CSS, date-fns, context API
-- **Backend**: Node.js, Express.js, MongoDB (if applicable)
-- **Authentication**: JWT / Firebase Auth (as per implementation)
-- **Deployment**: Vercel / Netlify / Render / Firebase Hosting
-- **Extras**: date-fns, toastify or custom styled alerts
+- react, react-dom
+- axios
+- firebase / jsonwebtoken
+- date-fns
+- react-router-dom
+- express
+- mongoose
+- dotenv
+- tailwindcss
 
 ---
 
-## 📸 Screenshots
+## 🚀 How to Run Locally
 
-*Add screenshots here showing the homepage, dashboard, cards, and plant detail page.*
+1. **Clone the repository:**
 
----
+   ```bash
+   git clone https://github.com/Ik-Riyad/mango_client.git
+   cd plant-care-tracker
 
-## 📂 Folder Structure
+   2. **Install frontend dependencies:**
+   ```
+
+- cd client
+- npm install
+
+3. **Install backend dependencies:**
+
+- cd ../server
+- npm install
+
+4. **Setup environment variables:**
+
+- Create .env files in both client and server directories.
+
+- Add your MongoDB URI, Stripe keys, Firebase config, and other sensitive data.
+
+5. **Start backend server:**
+
+- npm run dev
+
+6. **Start frontend app:**
+
+- cd ../client
+- npm start
+
+7. **Open in browser:**
+
+- Visit http://localhost:3000
+
+## 🔗 Live Project
+
+- 🌐[Live Project](https://unique-donut-b731f9.netlify.app/)
+
+## 📬 Contact
+
+- Reach me at: ik.riyad123@gmail.com
